@@ -1,0 +1,18 @@
+[package]
+name = "portal_engine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wgpu = "0.18"
+winit = "0.28"
+glam = { version = "0.24", features = ["bytemuck"] }
+bytemuck = { version = "1.13", features = ["derive"] }
+pollster = "0.3"
+env_logger = "0.10"
+log = "0.4"
+rodio = "0.17"
+rand = "0.8"
+
+[profile.release]
+opt-level = 3
